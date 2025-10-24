@@ -186,7 +186,7 @@ export default function AIContentGenerator() {
         </div>
 
         <button
-          onClick={generateContent}
+          onClick={() => generateContent()}
           disabled={!topic.trim() || loading}
           className="w-full bg-skypath-blue hover:bg-journey-coral text-white font-semibold py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
         >
