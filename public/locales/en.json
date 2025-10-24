@@ -1,0 +1,170 @@
+{
+  "common": {
+    "search": "Search",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "loading": "Loading...",
+    "generate": "Generate",
+    "analyze": "Analyze",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close"
+  },
+  "header": {
+    "brandHub": "Brand Hub",
+    "brandFoundation": "Brand Foundation",
+    "visualIdentity": "Visual Identity",
+    "assetsDownloads": "Assets & Downloads",
+    "aiContentTools": "AI Content Tools",
+    "aiAdvanced": "AI Advanced",
+    "teamResources": "Team Resources"
+  },
+  "navigation": {
+    "brandCore": "Brand Core",
+    "brandVoice": "Brand Voice",
+    "toneChecker": "Tone Checker",
+    "colors": "Colors",
+    "typography": "Typography",
+    "imageGuide": "Image Style Guide",
+    "assets": "Logo & Assets",
+    "templates": "Templates",
+    "embedCode": "Embed Code",
+    "aiPrompts": "AI Prompts",
+    "aiGenerator": "AI Content Generator",
+    "aiRewriter": "AI Rewriter",
+    "brandBrief": "Brand Brief Generator",
+    "examples": "Content Examples",
+    "brandKits": "Brand Kits",
+    "taglines": "Tagline Library",
+    "campaignIdeator": "Campaign Ideator",
+    "abTest": "A/B Test Analyzer",
+    "brandCheck": "Brand Alignment Check",
+    "stressTest": "Stress Test Scenarios"
+  },
+  "home": {
+    "title": "Waykeeper Brand Hub",
+    "subtitle": "Your complete internal brand system — designed for teams and AI",
+    "exploreAssets": "Explore Brand Assets",
+    "findTeamKit": "Find Your Team Kit",
+    "browsePrompts": "Browse AI Prompts",
+    "exploreHub": "Explore the Hub",
+    "exploreDescription": "Everything organized by category — from brand foundation to team-specific resources",
+    "aiPrompts": "AI Prompts",
+    "brandColors": "Brand Colors",
+    "teamKits": "Team Kits",
+    "taglines": "Taglines"
+  },
+  "brandCore": {
+    "title": "Brand Core",
+    "description": "Our purpose, promise, and core values that guide everything we do",
+    "purpose": "Purpose",
+    "brandPromise": "Brand Promise",
+    "coreValues": "Core Values"
+  },
+  "colors": {
+    "title": "Color Palette",
+    "description": "Vibrant warmth with clarity — human, optimistic, and trustworthy",
+    "primaryColors": "Primary Colors",
+    "accentColors": "Accent Colors",
+    "neutralColors": "Neutral Colors",
+    "usage": "Usage",
+    "emotionTags": "Emotion Tags"
+  },
+  "typography": {
+    "title": "Typography",
+    "description": "Grounded warmth with humanist precision — readable, accessible, timeless",
+    "headlines": "Headlines",
+    "body": "Body",
+    "getFromGoogleFonts": "Get from Google Fonts"
+  },
+  "voice": {
+    "title": "Brand Voice",
+    "voiceCharacteristics": "Voice Characteristics",
+    "wordsWeUse": "Words We Use",
+    "wordsToAvoid": "Words to Avoid"
+  },
+  "toneChecker": {
+    "title": "Tone Checker",
+    "description": "Validate your copy to ensure it matches Waykeeper's brand voice",
+    "aiTitle": "AI Brand Tone Checker",
+    "placeholder": "Paste your email, caption, or any copy here...",
+    "analyzeWithAI": "Analyze with AI",
+    "analyzing": "Analyzing...",
+    "score": "Score",
+    "brandAlignment": "Brand Alignment Score",
+    "whatWorks": "What's Working Well",
+    "areasToImprove": "Areas to Improve",
+    "aiSuggestions": "AI Suggestions",
+    "autoFix": "Auto-Fix",
+    "fixing": "Fixing...",
+    "fixedVersion": "Fixed Version",
+    "useThisVersion": "Use This Version"
+  },
+  "aiGenerator": {
+    "title": "AI Content Generator",
+    "description": "Generate brand-aligned content with AI — captions, emails, posts, and more",
+    "contentType": "Content Type",
+    "topic": "Topic / What to write about",
+    "audience": "Target Audience",
+    "subBrand": "Sub-Brand",
+    "additionalContext": "Additional Context",
+    "generateContent": "Generate Content",
+    "generating": "Generating...",
+    "generatedContent": "Generated Content",
+    "copyToClipboard": "Copy to Clipboard",
+    "quickRefinements": "Quick Refinements:",
+    "regenerate": "Regenerate",
+    "makeShorter": "Make Shorter",
+    "makeLonger": "Make Longer",
+    "moreCasual": "More Casual",
+    "moreProfessional": "More Professional",
+    "previousVersions": "Previous Versions:",
+    "version": "Version"
+  },
+  "rewriter": {
+    "title": "AI Content Rewriter",
+    "description": "Transform any text into Waykeeper voice — from corporate speak to warm wisdom",
+    "originalText": "Original Text",
+    "targetTone": "Target Tone",
+    "instruction": "Specific Instruction",
+    "rewriteInBrandVoice": "Rewrite in Brand Voice",
+    "rewriting": "Rewriting...",
+    "original": "Original (Before)",
+    "waykeeperVoice": "Waykeeper Voice (After)",
+    "copyThis": "Copy This",
+    "tryDifferentVersion": "Try Different Version",
+    "acceptRewrite": "Accept & Use Rewrite",
+    "accepted": "Accepted! Original updated"
+  },
+  "copilot": {
+    "title": "Brand Copilot",
+    "subtitle": "AI brand assistant",
+    "greeting": "Hi! I'm your Brand Copilot",
+    "askAnything": "Click a quick action or ask anything:",
+    "placeholder": "Ask me anything about the brand...",
+    "thinking": "Thinking...",
+    "you": "You",
+    "quickActions": {
+      "brandVoice": "What's our brand voice?",
+      "writeEmail": "Help me write an email",
+      "chooseColors": "What colors should I use?",
+      "suggestTagline": "Suggest a tagline"
+    }
+  },
+  "brandKits": {
+    "title": "Brand Kits by Team",
+    "description": "Everything you need, packaged for your specific role",
+    "includes": "Includes:",
+    "quickAccess": "Quick Access:",
+    "marketingKit": "Marketing Campaign Kit",
+    "salesKit": "Sales & BD Kit",
+    "designKit": "Design & Product Kit",
+    "hrKit": "HR & People Kit",
+    "supportKit": "Customer Support Kit"
+  },
+  "footer": {
+    "brandHub": "Waykeeper Brand Hub",
+    "internalUse": "Internal use only — Updated October 21, 2025"
+  }
+}
+
