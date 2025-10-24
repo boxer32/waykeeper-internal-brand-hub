@@ -22,6 +22,10 @@ export default function BrandCopilot() {
     { label: "Help me write an email", icon: "✉️" },
     { label: "What colors should I use?", icon: "🎨" },
     { label: "Suggest a tagline", icon: "💡" },
+    { label: "Create a campaign", icon: "🚀" },
+    { label: "Check my copy", icon: "✅" },
+    { label: "I need brand assets", icon: "📦" },
+    { label: "Show me the tools", icon: "🛠️" },
   ];
 
   const scrollToBottom = () => {
