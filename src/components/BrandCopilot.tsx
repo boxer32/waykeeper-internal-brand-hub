@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { MessageCircle, Send, Loader2, Bot, User, X } from 'lucide-react';
+import { MessageCircle, Send, Loader2, Bot, User, X, Copy } from 'lucide-react';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -14,6 +14,7 @@ export default function BrandCopilot() {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const quickActions = [
@@ -145,6 +146,14 @@ export default function BrandCopilot() {
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
     }
   };
 
