@@ -55,8 +55,9 @@ export default function Home() {
       title: 'Team Resources',
       description: 'Role-based kits and quick phrases',
       items: [
-        { name: 'Brand Kits', href: '/brand-kits', icon: <Package size={20} />, description: '5 team kits' },
+        { name: 'Brand Kits', href: '/brand-kits', icon: <Package size={20} />, description: '6 team kits' },
         { name: 'Taglines', href: '/taglines', icon: <Tag size={20} />, description: '10 ready phrases' },
+        { name: 'Brand Narrative Book', href: '/narrative-book', icon: <FileText size={20} />, description: '8-chapter story for partners' },
       ],
     },
   ];
@@ -151,7 +152,7 @@ export default function Home() {
               <div className="text-sm text-deep-earth/70">สีแบรนด์</div>
             </div>
             <div>
-              <div className="text-4xl font-headline font-bold text-journey-coral mb-2">5</div>
+              <div className="text-4xl font-headline font-bold text-journey-coral mb-2">6</div>
               <div className="text-sm text-deep-earth/70">ชุดทีม</div>
             </div>
             <div>
