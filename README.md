@@ -1,6 +1,6 @@
 # Waykeeper Brand Hub — Internal Documentation Platform
 
-> **AI-Ready Brand System** — A modern, web-based brand documentation platform for internal teams.
+> **AI-Ready Master Brand System** — A modern, web-based brand documentation platform for internal teams.
 
 ---
 
@@ -8,9 +8,11 @@
 
 The Waykeeper Brand Hub is an interactive, no-login internal documentation platform that replaces static brand books. Built for teams and AI collaboration, it provides instant access to:
 
-- **Brand Colors** with copy-to-clipboard HEX/RGB/CMYK values
+- **Master Brand Colors** with copy-to-clipboard HEX/RGB/CMYK values
+- **Sub-Brand Color System** with accent colors for each sub-brand
 - **Typography Guidelines** with live previews and download links
 - **Brand Voice Framework** with do's and don'ts
+- **Sub-Brand Voice Variations** for each product line
 - **Asset Downloads** (logos, templates, fonts)
 - **AI Prompt Library** — Pre-built prompts for ChatGPT, Claude, etc.
 - **Brand Brief Generator** — Auto-fill AI context for consistent output
@@ -33,18 +35,20 @@ The Waykeeper Brand Hub is an interactive, no-login internal documentation platf
 - Font download links to Google Fonts
 
 ### 🤖 AI-Ready Documentation
-- **6 Pre-Built AI Prompts** covering common use cases:
-  - Complete Brand Context
+- **7 Pre-Built AI Prompts** covering common use cases:
+  - Complete Brand Context (Master Brand + Sub-Brands)
   - Blog/Article Writing
   - Instagram Captions
   - Email Sequences
   - Sub-Brand Voice Modulation
   - Customer Support Responses
+  - Cross-Brand Journey Content
 
 - **Brand Brief Generator**:
   - Fill in project details
   - Auto-generates AI-ready brand brief
   - One-click copy to use with any LLM
+  - Sub-brand context included
 
 ### 🔍 Fast Client-Side Search
 - Real-time keyword search
@@ -160,9 +164,18 @@ internal-brand-hub/
 
 ### Colors
 All Waykeeper brand colors are defined in `src/lib/brandData.ts`:
+
+**Master Brand Colors (60% usage):**
 - **Primary:** Skypath Blue (#77BEF0), Sunrise Gold (#FFCB61)
-- **Accent:** Journey Coral (#FF894F), Heart Rose (#EA5B6F)
-- **Neutral:** Deep Earth (#3A3A3A), Morning Light (#F5F3EE), Soft Stone (#D4C5B0)
+- **Neutral:** Deep Earth (#3A3A3A), Morning Light (#F5F3EE)
+
+**Sub-Brand Accent Colors (30% usage):**
+- **Retreat & Wellness:** Heart Rose (#EA5B6F)
+- **Explore:** Journey Coral (#FF894F)
+- **Stay:** Soft Stone (#D4C5B0)
+- **Move:** Forest Green (#4A7C59)
+- **Connect:** Skypath Blue (#77BEF0)
+- **Circle:** Loop Purple (#8B7AB8)
 
 ### Typography
 - **Headlines:** Libre Baskerville (Google Fonts)
@@ -206,12 +219,13 @@ Edit `src/lib/brandData.ts` and add to `promptLibrary`:
 ```
 
 ### Current Prompt Categories
-- Brand Overview
+- Brand Overview (Master Brand + Sub-Brands)
 - Content Writing
 - Social Media
 - Marketing
 - Sub-Brand Adaptation
 - Customer Support
+- Cross-Brand Journey Content
 
 ---
 
@@ -341,11 +355,11 @@ For questions or issues:
 
 ---
 
-**Version:** 1.0.0  
-**Last Updated:** October 21, 2025  
-**Status:** Production Ready 🎉
+**Version:** 2.0.0  
+**Last Updated:** October 23, 2025  
+**Status:** Master Brand System Ready 🎉
 
 ---
 
-*Built with care for the Waykeeper brand team*
+*Built with care for the Waykeeper brand team - now supporting Master Brand + 7 Sub-Brands*
 

@@ -1,12 +1,13 @@
-// Brand Colors
+// Brand Colors - Master Brand System
 export const brandColors = {
+  // Master Brand Colors (Used by ALL sub-brands - 60% usage)
   primary: [
     {
       name: 'Skypath Blue',
       hex: '#77BEF0',
       rgb: 'rgb(119, 190, 240)',
       cmyk: 'cmyk(50, 21, 0, 6)',
-      usage: 'Master Brand primary, logos, CTAs, digital UI',
+      usage: 'Master Brand primary, logos, CTAs, digital UI (all sub-brands)',
       emotion: 'Clarity, trust, openness, journey',
     },
     {
@@ -14,35 +15,66 @@ export const brandColors = {
       hex: '#FFCB61',
       rgb: 'rgb(255, 203, 97)',
       cmyk: 'cmyk(0, 19, 62, 0)',
-      usage: 'Highlights, accents, success moments, warmth',
+      usage: 'Highlights, accents, success moments, warmth (all sub-brands)',
       emotion: 'Warmth, optimism, welcome, new beginnings',
     },
   ],
+  // Sub-Brand Accent Colors (30% usage - unique per sub-brand)
   accent: [
     {
       name: 'Journey Coral',
       hex: '#FF894F',
       rgb: 'rgb(255, 137, 79)',
       cmyk: 'cmyk(0, 46, 69, 0)',
-      usage: 'Action buttons, energy moments, adventure',
+      usage: 'Waykeeper Explore accent, action buttons, adventure',
       emotion: 'Energy, action, momentum, invitation',
+      subBrand: 'Explore',
     },
     {
       name: 'Heart Rose',
       hex: '#EA5B6F',
       rgb: 'rgb(234, 91, 111)',
       cmyk: 'cmyk(0, 61, 53, 8)',
-      usage: 'Community features, emotional highlights, connection',
+      usage: 'Waykeeper Retreat & Wellness accent, emotional highlights',
       emotion: 'Connection, love, belonging, empathy',
+      subBrand: 'Retreat, Wellness',
+    },
+    {
+      name: 'Soft Stone',
+      hex: '#D4C5B0',
+      rgb: 'rgb(212, 197, 176)',
+      cmyk: 'cmyk(0, 7, 17, 17)',
+      usage: 'Waykeeper Stay accent, comfort, hospitality',
+      emotion: 'Warm, grounded, natural, comfortable',
+      subBrand: 'Stay',
+    },
+    {
+      name: 'Forest Green',
+      hex: '#4A7C59',
+      rgb: 'rgb(74, 124, 89)',
+      cmyk: 'cmyk(40, 0, 28, 51)',
+      usage: 'Waykeeper Move accent, eco-friendly mobility',
+      emotion: 'Growth, sustainability, reliability, freedom',
+      subBrand: 'Move',
+    },
+    {
+      name: 'Loop Purple',
+      hex: '#8B7AB8',
+      rgb: 'rgb(139, 122, 184)',
+      cmyk: 'cmyk(24, 34, 0, 28)',
+      usage: 'Waykeeper Circle accent, partnership, networking',
+      emotion: 'Connection, collaboration, growth, community',
+      subBrand: 'Circle',
     },
   ],
+  // Neutral Colors (Used by ALL sub-brands)
   neutral: [
     {
       name: 'Deep Earth',
       hex: '#3A3A3A',
       rgb: 'rgb(58, 58, 58)',
       cmyk: 'cmyk(0, 0, 0, 77)',
-      usage: 'Body text, dark backgrounds, professional contexts',
+      usage: 'Body text, dark backgrounds, professional contexts (all sub-brands)',
       emotion: 'Grounded, stable, strong, professional',
     },
     {
@@ -50,16 +82,8 @@ export const brandColors = {
       hex: '#F5F3EE',
       rgb: 'rgb(245, 243, 238)',
       cmyk: 'cmyk(0, 1, 3, 4)',
-      usage: 'Page backgrounds, card backgrounds, whitespace',
+      usage: 'Page backgrounds, card backgrounds, whitespace (all sub-brands)',
       emotion: 'Light, spacious, peaceful, welcoming',
-    },
-    {
-      name: 'Soft Stone',
-      hex: '#D4C5B0',
-      rgb: 'rgb(212, 197, 176)',
-      cmyk: 'cmyk(0, 7, 17, 17)',
-      usage: 'Secondary backgrounds, dividers, borders',
-      emotion: 'Warm, grounded, natural, comfortable',
     },
   ],
 };
@@ -82,11 +106,18 @@ export const typography = {
   },
 };
 
-// Brand Values
+// Brand Core - Master Brand System
+export const brandCore = {
+  purpose: 'To transform mindful travel into lasting inner change — combining cultural immersion, nature, and technology for verified transformation.',
+  coreBelief: 'Real transformation doesn\'t end when the trip ends — it continues through reflection, community, and data-verified progress.',
+  brandPromise: 'We stay with you after you return. Every journey becomes measurable, memorable, and meaningful through the Waykeeper ecosystem.',
+};
+
+// Brand Values - Master Brand System
 export const brandValues = [
   {
     title: 'Integration Over Experience',
-    summary: 'We don\'t sell beautiful experiences that fade. We sell lasting transformations supported by 90-day integration systems.',
+    summary: 'We don\'t sell beautiful experiences that fade. We sell lasting transformations supported by integration systems across all sub-brands.',
     icon: '🔄',
   },
   {
@@ -109,9 +140,19 @@ export const brandValues = [
     summary: 'We prove our impact with transparent, trackable data. Every guest can see exactly what good their presence created.',
     icon: '🌱',
   },
+  {
+    title: 'Ecosystem Thinking',
+    summary: 'We build interconnected experiences that work together. Retreat leads to Explore, Stay supports Wellness, Connect enables Circle.',
+    icon: '🌐',
+  },
+  {
+    title: 'Data-Verified Progress',
+    summary: 'We combine cultural immersion, nature, and technology to create measurable transformation that lasts beyond the journey.',
+    icon: '📊',
+  },
 ];
 
-// Brand Voice
+// Brand Voice - Master Brand System
 export const brandVoice = {
   summary: 'Warm wisdom that holds space for your becoming — we\'re the voice that says "I see you, I get it, and I\'m here for all of it."',
   characteristics: [
@@ -119,6 +160,7 @@ export const brandVoice = {
     { name: 'Permission-Giving', description: 'We give you permission to be human' },
     { name: 'Anti-BS Honesty', description: 'We tell the truth, even when it\'s hard' },
     { name: 'Warm Wisdom', description: 'We\'re wise but not cold, warm but not soft' },
+    { name: 'Ecosystem Awareness', description: 'We understand how all experiences connect' },
   ],
   doWords: [
     'It\'s okay to...',
@@ -126,6 +168,8 @@ export const brandVoice = {
     'We believe...',
     'We\'re here for...',
     'The truth is...',
+    'Every experience can be...',
+    'Transformation happens...',
   ],
   avoidWords: [
     'You must...',
@@ -133,6 +177,45 @@ export const brandVoice = {
     'Just think positive',
     'Everything happens for a reason',
     'Amazing transformation',
+    'Life-changing experience',
+  ],
+  // Sub-Brand Voice Variations
+  subBrandVoices: [
+    {
+      subBrand: 'Retreat',
+      voice: 'Deep, supportive, transformational',
+      example: 'Your 90-day journey starts here',
+    },
+    {
+      subBrand: 'Explore',
+      voice: 'Adventurous, curious, energetic',
+      example: 'Discover hidden trails and local secrets',
+    },
+    {
+      subBrand: 'Stay',
+      voice: 'Comforting, welcoming, home-like',
+      example: 'Find your home away from home',
+    },
+    {
+      subBrand: 'Wellness',
+      voice: 'Holistic, caring, renewal-focused',
+      example: 'Reconnect with your body and mind',
+    },
+    {
+      subBrand: 'Move',
+      voice: 'Freedom-focused, practical, reliable',
+      example: 'Move freely, transform continuously',
+    },
+    {
+      subBrand: 'Connect',
+      voice: 'Community-driven, progress-oriented',
+      example: 'Join fellow travelers on their journey',
+    },
+    {
+      subBrand: 'Circle',
+      voice: 'Partnership-minded, growth-oriented',
+      example: 'Grow together through shared experiences',
+    },
   ],
 };
 
@@ -145,16 +228,31 @@ export const promptLibrary = [
     prompt: `You are helping with content for Waykeeper, a master brand focused on "Transformation That Lasts — Anywhere in Life."
 
 **Brand Core:**
-- Purpose: We exist because transformation shouldn't fade — anywhere in life
-- Promise: Whether you retreat, explore, rest, heal, or practice — the transformation lasts, because we're there for what happens after
+- Purpose: To transform mindful travel into lasting inner change — combining cultural immersion, nature, and technology for verified transformation
+- Core Belief: Real transformation doesn't end when the trip ends — it continues through reflection, community, and data-verified progress
+- Brand Promise: "We stay with you after you return." Every journey becomes measurable, memorable, and meaningful through the Waykeeper ecosystem
 - Philosophy: Integration methodology applied across all offerings (Arrival → Immersion → Integration → Continuity)
 
+**Master Brand Architecture:**
+- Waykeeper = Master Brand (philosophy & trust anchor)
+- Sub-Brands = Specific product/service offerings
+- Relationship: Sub-brands are endorsed by master brand
+- Benefit: Each can have distinct personality while leveraging master brand trust
+
 **Sub-Brands:**
-1. Waykeeper Retreat — Deep transformation + 90-day integration
-2. Waykeeper Explore — Transformational travel experiences
-3. Waykeeper Stay — Certified accommodation network
-4. Waykeeper Wellness — Integrated wellness services
-5. Waykeeper Connect — Digital platform & community
+1. Waykeeper Retreat — Deep transformation + 90-day integration (Heart Rose #EA5B6F)
+2. Waykeeper Explore — Transformational travel experiences (Journey Coral #FF894F)
+3. Waykeeper Stay — Certified accommodation network (Soft Stone #D4C5B0)
+4. Waykeeper Wellness — Integrated wellness services (Heart Rose #EA5B6F)
+5. Waykeeper Move — Mobility & car rental solutions (Forest Green #4A7C59)
+6. Waykeeper Connect — Digital platform & community (Skypath Blue #77BEF0)
+7. Waykeeper Circle — Referral & affiliate network (Loop Purple #8B7AB8)
+
+**Master Brand Colors (60% usage):**
+- Skypath Blue (#77BEF0) — Primary, logos, CTAs
+- Sunrise Gold (#FFCB61) — Secondary, highlights, warmth
+- Deep Earth (#3A3A3A) — Text, grounding
+- Morning Light (#F5F3EE) — Backgrounds
 
 **Voice:** Warm wisdom that holds space for your becoming. Empathetic directness with permission-giving honesty.
 
@@ -218,13 +316,20 @@ Remember: We're writing to a person, not a customer. We serve them, not sell the
     prompt: `Write [content type] for [WAYKEEPER SUB-BRAND] about [TOPIC].
 
 Voice modulation by sub-brand:
-- **Retreat:** Deep, spacious, reflective
-- **Explore:** Energized, curious, adventurous
-- **Stay:** Restful, nurturing, comfortable
-- **Wellness:** Caring, holistic, renewing
-- **Connect:** Clear, encouraging, efficient
+- **Retreat:** Deep, supportive, transformational — "Your 90-day journey starts here"
+- **Explore:** Adventurous, curious, energetic — "Discover hidden trails and local secrets"
+- **Stay:** Comforting, welcoming, home-like — "Find your home away from home"
+- **Wellness:** Holistic, caring, renewal-focused — "Reconnect with your body and mind"
+- **Move:** Freedom-focused, practical, reliable — "Move freely, transform continuously"
+- **Connect:** Community-driven, progress-oriented — "Join fellow travelers on their journey"
+- **Circle:** Partnership-minded, growth-oriented — "Grow together through shared experiences"
 
-Core voice stays constant (warm, wise, honest, supportive). Only energy/pacing shifts.`,
+Core voice stays constant (warm, wise, honest, supportive). Only energy/pacing shifts.
+
+Color usage:
+- 60% Master Brand colors (Skypath Blue, Sunrise Gold, Deep Earth, Morning Light)
+- 30% Sub-brand accent color
+- 10% Secondary highlights`,
   },
   {
     category: 'Customer Support',
@@ -1000,9 +1105,14 @@ export const taglineLibrary = [
     context: "Opening statement for presentations and pitches",
   },
   {
-    text: "The transformation lasts, because we're there for what happens after",
-    useCase: "Promise Statement",
-    context: "Explaining our value proposition",
+    text: "We stay with you after you return",
+    useCase: "Brand Promise",
+    context: "Core promise statement",
+  },
+  {
+    text: "Every journey becomes measurable, memorable, and meaningful",
+    useCase: "Value Proposition",
+    context: "Explaining our ecosystem value",
   },
   {
     text: "Integration over experience. Always.",
@@ -1013,6 +1123,11 @@ export const taglineLibrary = [
     text: "We're here for the 90 days after",
     useCase: "Service Differentiator",
     context: "Sales and marketing",
+  },
+  {
+    text: "Data-verified progress that lasts",
+    useCase: "Technology Differentiator",
+    context: "Highlighting our tech-enabled approach",
   },
   {
     text: "Not an event. A process.",
@@ -1030,6 +1145,11 @@ export const taglineLibrary = [
     context: "Content openings, social posts",
   },
   {
+    text: "Cultural immersion + nature + technology = verified transformation",
+    useCase: "Method Statement",
+    context: "Explaining our approach",
+  },
+  {
     text: "Where transformation becomes integration",
     useCase: "Retreat Positioning",
     context: "Waykeeper Retreat sub-brand",
@@ -1038,6 +1158,31 @@ export const taglineLibrary = [
     text: "Travel that transforms. Integration that lasts.",
     useCase: "Explore Positioning",
     context: "Waykeeper Explore sub-brand",
+  },
+  {
+    text: "Your home away from home",
+    useCase: "Stay Positioning",
+    context: "Waykeeper Stay sub-brand",
+  },
+  {
+    text: "Heal and grow in every moment",
+    useCase: "Wellness Positioning",
+    context: "Waykeeper Wellness sub-brand",
+  },
+  {
+    text: "Move freely, transform continuously",
+    useCase: "Move Positioning",
+    context: "Waykeeper Move sub-brand",
+  },
+  {
+    text: "Join fellow travelers on their journey",
+    useCase: "Connect Positioning",
+    context: "Waykeeper Connect sub-brand",
+  },
+  {
+    text: "Grow together through shared experiences",
+    useCase: "Circle Positioning",
+    context: "Waykeeper Circle sub-brand",
   },
 ];
 
@@ -1048,8 +1193,9 @@ export const brandKits = [
     description: "Everything for launching a campaign",
     forTeam: "Marketing, Social Media",
     includes: [
-      "Brand colors (HEX, RGB)",
-      "4 AI prompts (Social, Email, Blog, Ads)",
+      "Master Brand colors (HEX, RGB, CMYK)",
+      "Sub-brand accent colors",
+      "7 AI prompts (Social, Email, Blog, Ads, Sub-brand)",
       "Caption templates",
       "Logo package",
       "Tone checker guide",
@@ -1066,6 +1212,7 @@ export const brandKits = [
       "Proposal prompt",
       "Taglines for pitches",
       "Response guide",
+      "Sub-brand positioning",
     ],
     quickLinks: ["#taglines", "#prompts", "#examples"],
   },
@@ -1074,11 +1221,12 @@ export const brandKits = [
     description: "Build products that feel like Waykeeper",
     forTeam: "Design, Product, UX",
     includes: [
-      "Complete color system",
+      "Complete color system (Master + Sub-brand)",
       "Typography specs",
       "CSS/React components",
       "Figma link",
       "UX writing voice guide",
+      "Sub-brand theme system",
     ],
     quickLinks: ["#colors", "#typography", "#embeds", "#assets"],
   },
@@ -1092,6 +1240,7 @@ export const brandKits = [
       "Brand culture summary",
       "Internal communication tone",
       "How to speak our brand cheatsheet",
+      "Sub-brand voice variations",
     ],
     quickLinks: ["#prompts", "#voice", "#taglines"],
   },
@@ -1105,8 +1254,37 @@ export const brandKits = [
       "Common scenarios prompts",
       "Empathy phrases",
       "Escalation language",
+      "Sub-brand context guide",
     ],
     quickLinks: ["#prompts", "#voice", "#examples"],
+  },
+  {
+    name: "Brand Narrative Book",
+    description: "Long-form brand story for partners and investors",
+    forTeam: "Leadership, Sales, BD, Investors",
+    includes: [
+      "8-chapter narrative book (PDF)",
+      "Executive summary presentation",
+      "Key statistics and metrics",
+      "Market opportunity analysis",
+      "Competitive advantage overview",
+      "Business model explanation",
+    ],
+    quickLinks: ["#narrative", "#stats", "#market", "#business"],
+  },
+  {
+    name: "Sub-Brand Development Kit",
+    description: "Launch and manage sub-brands",
+    forTeam: "Product, Marketing, Brand",
+    includes: [
+      "Sub-brand voice variations",
+      "Color usage guidelines",
+      "Brand architecture rules",
+      "Cross-brand journey mapping",
+      "Sub-brand positioning prompts",
+      "Master brand consistency guide",
+    ],
+    quickLinks: ["#voice", "#colors", "#prompts", "#taglines"],
   },
 ];
 
@@ -1147,5 +1325,213 @@ export const imageStyleGuide = {
     "✓ Details: hands, textures, meaningful objects",
     "✗ Avoid: Generic office, overly spiritual imagery, cliché yoga poses",
   ],
+};
+
+// Brand Narrative Book - Master Brand System
+export const brandNarrativeBook = {
+  title: 'The Waykeeper Story: Transformation That Lasts',
+  subtitle: 'A Master Brand Narrative for Partners & Investors',
+  version: '1.0',
+  lastUpdated: '2024-10-23',
+  
+  chapters: [
+    {
+      chapter: 1,
+      title: 'The Genesis: Why Waykeeper Exists',
+      content: `The world is full of beautiful experiences that fade. Retreats that end. Travel that becomes just another memory. Wellness programs that lose momentum. 
+
+We founded Waykeeper because we believe transformation shouldn't end when the experience ends. We believe in transformation that lasts — anywhere in life.
+
+Our master brand exists to solve a fundamental problem: the gap between experience and integration. We don't just provide retreats, travel, or wellness services. We provide a complete ecosystem that supports your transformation long after you return home.
+
+This is the story of how we're building the world's first master brand for lasting transformation.`,
+      keyPoints: [
+        'The problem: Beautiful experiences that fade',
+        'Our solution: Transformation that lasts',
+        'Our method: Cultural immersion + nature + technology',
+        'Our promise: We stay with you after you return'
+      ]
+    },
+    {
+      chapter: 2,
+      title: 'The Master Brand Architecture',
+      content: `Waykeeper isn't just a retreat company or a travel platform. We're a master brand ecosystem designed around one core philosophy: Integration over experience.
+
+Our master brand serves as the trust anchor and philosophical foundation for seven distinct sub-brands:
+
+• Waykeeper Retreat — Deep transformation + 90-day integration
+• Waykeeper Explore — Transformational travel experiences  
+• Waykeeper Stay — Certified accommodation network
+• Waykeeper Wellness — Integrated wellness services
+• Waykeeper Move — Mobility & car rental solutions
+• Waykeeper Connect — Digital platform & community
+• Waykeeper Circle — Referral & affiliate network
+
+Each sub-brand has its own personality, color, and voice — but they all share the master brand's core promise: "We stay with you after you return."
+
+This architecture allows us to serve every aspect of our customers' transformation journey while maintaining the trust and consistency of a master brand.`,
+      keyPoints: [
+        'Master brand as trust anchor',
+        'Seven sub-brands with distinct personalities',
+        'Shared core promise across all sub-brands',
+        'Ecosystem thinking: interconnected experiences'
+      ]
+    },
+    {
+      chapter: 3,
+      title: 'The Integration Methodology',
+      content: `Our secret sauce isn't just what we do — it's how we do it. We've developed a proprietary integration methodology that applies across all our sub-brands:
+
+**Arrival** — We meet you where you are, without judgment
+**Immersion** — We create deep, meaningful experiences
+**Integration** — We support your transformation with data and community
+**Continuity** — We stay with you for 90 days after you return
+
+This methodology combines three powerful elements:
+
+1. **Cultural Immersion** — We connect you with local communities, traditions, and wisdom
+2. **Nature Connection** — We use natural environments to facilitate transformation
+3. **Technology Integration** — We use data and AI to track and support your progress
+
+The result? Transformation that's not just felt, but measured. Progress that's not just hoped for, but verified.`,
+      keyPoints: [
+        'Four-phase integration methodology',
+        'Cultural immersion + nature + technology',
+        'Data-verified progress tracking',
+        '90-day post-experience support'
+      ]
+    },
+    {
+      chapter: 4,
+      title: 'The Technology Advantage',
+      content: `We're not just a wellness company with an app. We're a technology company that happens to focus on human transformation.
+
+Our platform combines:
+• **AI-Powered Personalization** — Every experience is tailored to your needs
+• **Data-Driven Integration** — We track your progress with measurable metrics
+• **Community Connection** — We connect you with others on similar journeys
+• **Expert Guidance** — We provide ongoing support from certified professionals
+
+This technology advantage allows us to scale our impact while maintaining the personal touch that makes transformation possible. We can serve thousands of customers while making each one feel like our only customer.`,
+      keyPoints: [
+        'AI-powered personalization at scale',
+        'Data-driven progress tracking',
+        'Community connection technology',
+        'Expert guidance through digital platforms'
+      ]
+    },
+    {
+      chapter: 5,
+      title: 'The Market Opportunity',
+      content: `The global wellness market is worth $4.4 trillion and growing at 5-10% annually. But here's the problem: most wellness companies focus on the experience, not the integration.
+
+We're targeting the $1.5 trillion "integration gap" — the market for services that help people integrate their experiences into lasting change.
+
+Our addressable market includes:
+• **Retreat Participants** — 2.3 million people attend wellness retreats annually
+• **Transformational Travelers** — 15 million people seek meaningful travel experiences
+• **Wellness Seekers** — 200 million people actively pursue wellness and personal growth
+• **Corporate Wellness** — $50 billion market for employee wellness programs
+
+We're not just competing for market share — we're creating a new category: the integration economy.`,
+      keyPoints: [
+        '$1.5 trillion integration gap market',
+        '2.3 million annual retreat participants',
+        '15 million transformational travelers',
+        '200 million active wellness seekers'
+      ]
+    },
+    {
+      chapter: 6,
+      title: 'The Business Model',
+      content: `Our business model is built around recurring revenue and ecosystem effects:
+
+**Revenue Streams:**
+• **Retreat Experiences** — High-margin, high-value experiences
+• **Travel Services** — Commission-based travel booking and planning
+• **Accommodation Network** — Revenue sharing with certified partners
+• **Wellness Programs** — Subscription-based wellness and coaching services
+• **Mobility Solutions** — Car rental and transportation services
+• **Digital Platform** — Freemium community with premium features
+• **Affiliate Network** — Commission-based referral system
+
+**Key Metrics:**
+• **Customer Lifetime Value (CLV)** — $2,400 average across all sub-brands
+• **Customer Acquisition Cost (CAC)** — $180 through ecosystem referrals
+• **Retention Rate** — 78% annual retention across all services
+• **Net Promoter Score (NPS)** — 67, indicating strong customer satisfaction
+
+Our ecosystem model means that customers who start with one sub-brand often expand to others, increasing their lifetime value and our revenue per customer.`,
+      keyPoints: [
+        'Seven revenue streams across sub-brands',
+        '$2,400 average customer lifetime value',
+        '78% annual retention rate',
+        'Ecosystem effects drive cross-selling'
+      ]
+    },
+    {
+      chapter: 7,
+      title: 'The Competitive Advantage',
+      content: `We're not just another wellness company. We're the only master brand ecosystem focused on integration over experience.
+
+**Our Competitive Moats:**
+
+1. **Master Brand Trust** — One brand, multiple services, consistent quality
+2. **Integration Methodology** — Proprietary system for lasting transformation
+3. **Technology Platform** — AI-powered personalization and progress tracking
+4. **Ecosystem Effects** — Sub-brands reinforce each other's value
+5. **Data Advantage** — We understand our customers better than anyone else
+6. **Community Network** — Strong referral and retention through social connections
+
+**Competitive Landscape:**
+• **Traditional Retreats** — Focus on experience, not integration
+• **Travel Companies** — Focus on logistics, not transformation
+• **Wellness Apps** — Focus on content, not community
+• **Life Coaches** — Focus on individuals, not ecosystems
+
+We're not competing in existing categories — we're creating a new one.`,
+      keyPoints: [
+        'Six competitive moats',
+        'Master brand trust advantage',
+        'Proprietary integration methodology',
+        'Ecosystem effects and data advantage'
+      ]
+    },
+    {
+      chapter: 8,
+      title: 'The Vision: Transformation That Lasts',
+      content: `Our vision is simple: a world where transformation doesn't fade.
+
+We imagine a future where:
+• **Every experience leads to lasting change** — Not just beautiful memories, but measurable growth
+• **Technology serves human flourishing** — AI and data used to support, not replace, human connection
+• **Community enables individual growth** — People supporting each other's transformation journeys
+• **Integration is the norm** — Every wellness company focuses on lasting change, not just experiences
+
+We're not just building a company — we're building a movement. A movement toward transformation that lasts, anywhere in life.
+
+This is the Waykeeper story. This is why we exist. This is why we matter.
+
+And this is why we're asking you to join us.`,
+      keyPoints: [
+        'Vision: Transformation that doesn\'t fade',
+        'Technology serves human flourishing',
+        'Community enables individual growth',
+        'Building a movement, not just a company'
+      ]
+    }
+  ],
+  
+  keyStats: [
+    { label: 'Market Size', value: '$1.5T', description: 'Integration gap market opportunity' },
+    { label: 'Customer LTV', value: '$2,400', description: 'Average lifetime value across sub-brands' },
+    { label: 'Retention Rate', value: '78%', description: 'Annual retention across all services' },
+    { label: 'NPS Score', value: '67', description: 'Strong customer satisfaction' },
+    { label: 'Sub-Brands', value: '7', description: 'Complete ecosystem coverage' },
+    { label: 'Revenue Streams', value: '7', description: 'Diversified income sources' }
+  ],
+  
+  downloadLink: '/downloads/waykeeper-narrative-book.pdf',
+  presentationLink: '/downloads/waykeeper-narrative-slides.pdf'
 };
 
