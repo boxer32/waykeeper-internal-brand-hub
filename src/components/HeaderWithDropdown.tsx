@@ -88,12 +88,7 @@ export default function HeaderWithDropdown({ onSearchClick }: { onSearchClick?: 
         { name: t('navigation.brandKits'), href: '/brand-kits', description: 'Packaged by role' },
         { name: t('navigation.taglines'), href: '/taglines', description: '10 ready phrases' },
         { name: 'Narrative Book', href: '/narrative-book', description: '8-chapter story for partners' },
-      ],
-    },
-    {
-      name: 'Project Tracking',
-      subItems: [
-        { name: 'Dashboard', href: '/dashboard', description: 'Ecosystem progress tracker' },
+        { name: 'Project Tracker', href: '/project-tracker', description: '3-month ecosystem progress' },
       ],
     },
   ];
