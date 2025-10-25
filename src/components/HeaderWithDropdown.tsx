@@ -90,6 +90,12 @@ export default function HeaderWithDropdown({ onSearchClick }: { onSearchClick?: 
         { name: 'Narrative Book', href: '/narrative-book', description: '8-chapter story for partners' },
       ],
     },
+    {
+      name: 'Project Tracking',
+      subItems: [
+        { name: 'Dashboard', href: '/dashboard', description: 'Ecosystem progress tracker' },
+      ],
+    },
   ];
 
   return (

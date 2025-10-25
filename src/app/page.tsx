@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Palette, Type, MessageCircle, Download, Sparkles, Code2, Image, Package, Tag, FileText, Lightbulb, ImageIcon, Cpu, AlertTriangle, Zap, HelpCircle } from 'lucide-react';
+import { Palette, Type, MessageCircle, Download, Sparkles, Code2, Image, Package, Tag, FileText, Lightbulb, ImageIcon, Cpu, AlertTriangle, Zap, HelpCircle, BarChart3 } from 'lucide-react';
 
 export default function Home() {
   const categories = [
@@ -58,6 +58,13 @@ export default function Home() {
         { name: 'Brand Kits', href: '/brand-kits', icon: <Package size={20} />, description: '6 team kits' },
         { name: 'Taglines', href: '/taglines', icon: <Tag size={20} />, description: '10 ready phrases' },
         { name: 'Brand Narrative Book', href: '/narrative-book', icon: <FileText size={20} />, description: '8-chapter story for partners' },
+      ],
+    },
+    {
+      title: 'Project Tracking',
+      description: 'Ecosystem progress and operations',
+      items: [
+        { name: 'Dashboard', href: '/dashboard', icon: <BarChart3 size={20} />, description: 'Unified tracker' },
       ],
     },
   ];
