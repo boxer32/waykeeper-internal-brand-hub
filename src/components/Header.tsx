@@ -14,6 +14,7 @@ export default function Header() {
     { name: 'Assets', href: '/assets' },
     { name: 'AI Prompts', href: '/prompts' },
     { name: 'Templates', href: '/templates' },
+    { name: 'Narrative Book', href: '/narrative-book' },
     { name: 'Embed Code', href: '/embeds' },
     { name: 'Examples', href: '/examples' },
   ];

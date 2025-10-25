@@ -82,6 +82,12 @@ export default function Home() {
                 หาชุดทีมของคุณ
               </Link>
               <Link
+                href="/narrative-book"
+                className="px-8 py-4 bg-white text-skypath-blue font-semibold rounded-lg hover:bg-morning-light transition-colors text-lg"
+              >
+                Brand Narrative Book
+              </Link>
+              <Link
                 href="/prompts"
                 className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors text-lg"
               >

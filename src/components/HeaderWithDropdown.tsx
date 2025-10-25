@@ -87,6 +87,7 @@ export default function HeaderWithDropdown({ onSearchClick }: { onSearchClick?: 
       subItems: [
         { name: t('navigation.brandKits'), href: '/brand-kits', description: 'Packaged by role' },
         { name: t('navigation.taglines'), href: '/taglines', description: '10 ready phrases' },
+        { name: 'Narrative Book', href: '/narrative-book', description: '8-chapter story for partners' },
       ],
     },
   ];
